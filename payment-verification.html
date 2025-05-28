@@ -1,0 +1,97 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSC Learn Payment</title>
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="stylesheet" class="js-color-style" href="./css/color-1.css">
+  <link rel="stylesheet" class="js-glass-style" href="./css/glass.css" disabled="">
+</head>
+<body>
+  <div class="notification py-5 d-flex justify-content-center align-items-center">
+    <div class="container">
+      <div class="card p-5 shadow col-8 section-title mx-auto">
+        <div class="row justify-content-between align-items-center mb-3">
+          <div class="col-lg-7">
+            <h3 class="title mb-4" style="font-weight: 600;">Course Payment Verification</h3>
+            <h1 class="sub-title" id="greeting" style="font-weight: bolder;">Hello!</h1>
+            <p style="color: rgb(0, 0, 51);" class="mb-1">Enter Your Email For Verification Code</p>
+            <form id="paymentForm">
+              <div class="mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="email" required />
+              </div>
+              <button type="submit" class="btn btn-theme">Send Verification Code</button>
+            </form>
+          </div>
+          <div class="col-lg-5">
+            <img src="./img/undraw_credit-card_t6qm.svg" alt="">
+          </div>
+        </div>
+        <p id="status"></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const name = localStorage.getItem("cscUserName") || "there";
+    document.getElementById("greeting").textContent = `Hello, ${name}!`;
+    
+    const form = document.getElementById('paymentForm');
+    const status = document.getElementById('status');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = document.getElementById('email').value;
+
+      const res = await fetch('/send-code', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await res.json();
+      if (data.success) {
+        status.textContent = "Verification code sent to your email!";
+        status.className = "text-success";
+      } else {
+        status.textContent = "Failed to send email.";
+        status.className = "text-danger";
+      }
+    });
+    
+    document.querySelector("#paymentForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const email = e.target.email.value;
+  const name = e.target.fullName.value;
+
+  try {
+    const res = await fetch("/send-code", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email }),
+    });
+
+    const data = await res.json();
+    
+    if (data.success) {
+      // Redirect with email query string
+      window.location.href = `/html/verify-code.html?email=${encodeURIComponent(email)}`;
+    } else {
+      alert("Failed to send verification code.");
+    }
+  } catch (err) {
+    console.error(err);
+    alert("Something went wrong.");
+  }
+});
+
+  </script>
+</body>
+</html>
