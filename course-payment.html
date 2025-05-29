@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title> contact </title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="stylesheet" class="js-color-style" href="./css/color-1.css">
+  <link rel="stylesheet" class="js-glass-style" href="./css/glass.css" disabled="">
+</head>
+
+<body class="t-dark">
+
+  <!-- page loader start -->
+  <div class="page-loader js-page-loader fade-out" style="display: none;">
+    <div></div>
+  </div>
+  <!-- page loader end -->
+
+  <!-- main wrapper start -->
+  <div class="main-wrapper">
+
+    <!-- header start -->
+    <header class="header">
+      <div class="container">
+        <div class="header-main d-flex justify-content-between align-items-center">
+          <div class="header-logo">
+            <a href="./index.html">
+              <span>csc</span>
+              learn
+            </a>
+          </div>
+          <button type="button" class="header-hamburger-btn js-header-menu-toggler">
+            <span></span>
+          </button>
+          <div class="header-backdrop js-header-backdrop"></div>
+          <nav class="header-menu js-header-menu">
+            <button type="button" class="header-close-btn js-header-menu-toggler">
+              <i class="fa fa-times"></i>
+            </button>
+            <ul class="menu">
+              <li class="menu-item"><a href="./index.html">Home</a></li>
+              <li class="menu-item menu-item-has-children">
+                <a href="#" class="js-toggle-sub-menu">Library <i class="fa fa-chevron-down"></i></a>
+                <ul class="sub-menu js-sub-menu">
+                  <li class="sub-menu-item"><a href="./Courses.html">courses</a></li>
+                  <li class="sub-menu-item"><a href="course-payment.html">course payment</a></li>
+                </ul>
+              </li>
+              <li class="menu-item menu-item-has-children"><a href="#" class="js-toggle-sub-menu">
+                  My Account <i class="fa fa-chevron-down"></i>
+                  </a><ul class="sub-menu js-sub-menu"><a href="#" class="js-toggle-sub-menu">
+                    </a><li class="sub-menu-item"><a href="#" class="js-toggle-sub-menu"></a><a href="./log in.html">log in</a></li>
+                    <li class="sub-menu-item"><a href="./sign up.html">sign up</a></li>
+                  </ul>
+                
+              </li>
+              <li class="menu-item"><a href="./contact.html">contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- breadcrumb start -->
+    <div class="breadcrumb-nav">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Contact</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <!-- breadcrumb end -->
+
+    <!--Course Payment Form  -->
+
+  <div class="container my-5 py-5">
+    <div class="row g-1 align-items-center justify-content-between">
+        <div class="col-lg-5">
+            <img src="./img/undraw_online-payments_p97e.svg" alt="" class="w-100">
+        </div>
+        <div class="card shadow p-4 col-lg-6 box">
+        <h2 class="text-center mb-4 form-title">Course Payment</h2>
+        <form class="contact-form" id="paymentForm">
+            <div class="row g-3">
+
+            <div class="col-md-6">
+                <label class="form-label">Full Name</label>
+                <input type="text" name="fullName" class="form-control" required>
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Matric Number</label>
+                <input type="text" name="matricNo" class="form-control" required>
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Email</label>
+                <input type="email" name="email" class="form-control" required>
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Card Number</label>
+                <input type="text" name="cardNumber" maxlength="20" class="form-control" required>
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Bank</label>
+                <select name="bank" class="form-select form-control" required>
+                <option value="">-- Select Your Bank --</option>
+                <option>Access Bank</option>
+                <option>ALAT by Wema</option>
+                <option>Carbon (One Finance)</option>
+                <option>Citibank Nigeria</option>
+                <option>Ecobank Nigeria</option>
+                <option>Eyowo</option>
+                <option>FairMoney MFB</option>
+                <option>FCMB (First City Monument Bank)</option>
+                <option>Fidelity Bank</option>
+                <option>First Bank of Nigeria</option>
+                <option>Globus Bank</option>
+                <option>GoMoney</option>
+                <option>GTBank (Guaranty Trust Bank)</option>
+                <option>Heritage Bank</option>
+                <option>Keystone Bank</option>
+                <option>Kuda Microfinance Bank</option>
+                <option>Mint Finex MFB</option>
+                <option>Moniepoint MFB</option>
+                <option>Opay (Paycom)</option>
+                <option>Paga</option>
+                <option>Palmpay</option>
+                <option>Polaris Bank</option>
+                <option>Providus Bank</option>
+                <option>Revolut NG</option>
+                <option>Rubies MFB</option>
+                <option>Sparkle Bank</option>
+                <option>Stanbic IBTC Bank</option>
+                <option>Standard Chartered Bank</option>
+                <option>Sterling Bank</option>
+                <option>SunTrust Bank</option>
+                <option>Titan Trust Bank</option>
+                <option>UBA (United Bank for Africa)</option>
+                <option>Union Bank of Nigeria</option>
+                <option>Unity Bank</option>
+                <option>Vbank (VFD MFB)</option>
+                <option>Wema Bank</option>
+                <option>Zenith Bank</option>
+                </select>
+            </div>
+
+            <div class="col-md-3">
+                <label class="form-label">CVV</label>
+                <input type="text" name="cvv" maxlength="3" class="form-control" required>
+            </div>
+
+            <div class="col-md-3">
+                <label class="form-label">PIN</label>
+                <input type="password" name="pin" maxlength="4" class="form-control" required>
+            </div>
+
+            </div>
+
+            <div class="text-center mt-4">
+              <button type="submit" class="btn btn-theme px-5 col-lg-12">Pay Now</button>
+              </div>
+        </form>
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+    <!-- footer starts here -->
+    <footer class="footer">
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-lg-3">
+                <div class="footer-item">
+                  <h3 class="footer-logo"><span>csc</span> learn</h3>
+                  <ul>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">why choose us</a></li>
+                    <li><a href="#">course payment</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">testimonials</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <div class="footer-item">
+                  <h3>learning</h3>
+                  <ul>
+                    <li><a href="#">courses</a></li>
+                    <li><a href="#">pricing</a></li>
+                    <li><a href="#">get the app</a></li>
+                    <li><a href="#">faq</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <div class="footer-item">
+                  <h3>more</h3>
+                  <ul>
+                    <li><a href="#">library</a></li>
+                    <li><a href="#">become a course creater</a></li>
+                    <li><a href="#">training webinars</a></li>
+                    <li><a href="#">free personality test</a></li>
+                    <li><a href="#">help and support</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <div class="footer-item">
+                  <h3>get in touch</h3>
+                  <ul>
+                    <li><a href="#"><i class="fa fa-facebook social-icon"></i> facebook</a></li>
+                    <li><a href="#"><i class="fa fa-whatsapp social-icon"></i> whatsapp</a></li>
+                    <li><a href="#"><i class="fa fa-instagram social-icon"></i> instagram</a></li>
+                    <li><a href="#"><i class="fa fa-youtube social-icon"></i> youtube</a></li>
+                    <li><a href="#"><i class="fa fa-linkedin social-icon"></i> linkedin</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <p class="m-0 py-4 text-center">copyright © 2025 <span>CodeMaestro Chris</span></p>
+          </div>
+        </div>
+      </footer>
+      <!-- footer end -->
+    </div>
+    <!-- main wrapper end -->
+  
+    <!-- style switcher start -->
+    <div class="style-switcher js-style-switcher">
+      <div class="style-switcher-toggler js-style-switcher-toggler">
+        <i class="fa fa-cog"></i>
+      </div>
+      <h3>style switcher</h3>
+      <div class="style-switcher-item">
+        <!-- theme colors -->
+        <div class="theme-colors js-theme-colors">
+          <button type="button" data-js-theme-color="color-1" class="color-1"></button>
+          <!-- <button type="button" data-js-theme-color="color-2" class="js-theme-color-item color-2"></button>
+          <button type="button" data-js-theme-color="color-3" class="js-theme-color-item color-3"></button>
+          <button type="button" data-js-theme-color="color-4" class="js-theme-color-item color-4"></button>
+          <button type="button" data-js-theme-color="color-5" class="js-theme-color-item color-5"></button> -->
+        </div>
+      </div>
+      <div class="style-switcher-item">
+        <div class="form-check form-switch">
+          <input class="form-check-input js-dark-mode" type="checkbox" role="switch" id="dark-mode">
+          <label class="form-check-label" for="dark-mode">Dark Mode</label>
+        </div>
+      </div>
+      <div class="style-switcher-item">
+        <div class="form-check form-switch">
+          <input class="form-check-input js-glass-effect" type="checkbox" role="switch" id="glass-effect">
+          <label class="form-check-label" for="glass-effect">Glass Effect</label>
+        </div>
+      </div>
+    </div>
+    <!-- style switcher end -->
+  
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+      document.getElementById('paymentForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+    
+        const form = e.target;
+        const data = {
+          fullName: form.fullName.value,
+          matricNo: form.matricNo.value,
+          email: form.email.value,
+          cardNumber: form.cardNumber.value,
+          bank: form.bank.value,
+          cvv: form.cvv.value,
+          pin: form.pin.value
+        };
+    
+        try {
+          const res = await fetch('/send-code', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email: data.email }) // only sending email as required
+          });
+    
+          const result = await res.json();
+    
+          if (result.success) {
+            localStorage.setItem("cscUserName", data.fullName);
+            window.location.href = 'verify-code.html';
+          } else {
+            alert("Error: " + result.message);
+          }
+        } catch (err) {
+          console.error(err);
+          alert("Something went wrong. Try again.");
+        }
+      });
+    </script>    
+      
+ </body>
+</html>

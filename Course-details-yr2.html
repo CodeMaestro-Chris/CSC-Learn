@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> Course Detalis </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
+  <link rel="stylesheet" href="./font-6/css/all.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="stylesheet" class="js-color-style" href="./css/color-1.css">
+  <link rel="stylesheet" class="js-glass-style" href="./css/glass.css" disabled="">
+</head>
+
+<body class="t-dark">
+
+<!-- page loader start -->
+<div class="page-loader js-page-loader fade-out" style="display: none;">
+  <div></div>
+</div>
+<!-- page loader end -->
+
+<!-- main wrapper start -->
+<div class="main-wrapper">
+
+  <!-- header start -->
+  <header class="header">
+    <div class="container">
+      <div class="header-main d-flex justify-content-between align-items-center">
+        <div class="header-logo">
+          <a href="./">
+            <span>csc</span>
+            learn
+          </a>
+        </div>
+        <button type="button" class="header-hamburger-btn js-header-menu-toggler">
+          <span></span>
+        </button>
+        <div class="header-backdrop js-header-backdrop"></div>
+        <nav class="header-menu js-header-menu">
+          <button type="button" class="header-close-btn js-header-menu-toggler">
+            <i class="fa fa-times"></i>
+          </button>
+          <ul class="menu">
+            <li class="menu-item"><a href="./">Home</a></li>
+            <li class="menu-item menu-item-has-children">
+              <a href="#" class="js-toggle-sub-menu">Library <i class="fa fa-chevron-down"></i></a>
+              <ul class="sub-menu js-sub-menu">
+                <li class="sub-menu-item"><a href="./Courses.html">courses</a></li>
+                <li class="sub-menu-item"><a href="./course-detalis">course payment</a></li>
+              </ul>
+            </li>
+            <li class="menu-item menu-item-has-children"><a href="#" class="js-toggle-sub-menu">
+                My Account <i class="fa fa-chevron-down"></i>
+                </a><ul class="sub-menu js-sub-menu"><a href="#" class="js-toggle-sub-menu">
+                  </a><li class="sub-menu-item"><a href="#" class="js-toggle-sub-menu"></a><a href="./log-in">log in</a></li>
+                  <li class="sub-menu-item"><a href="./sign-up">sign up</a></li>
+                </ul>
+              
+            </li>
+            <li class="menu-item"><a href="./contact">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- header end -->
+
+    <!-- breadcrumb start -->
+    <div class="breadcrumb-nav">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href='/'>Home</a></li>
+            <li class="breadcrumb-item"><a href='/courses'>Courses</a></li>
+            <li class="breadcrumb-item active" aria-current="page">courses Detalis</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <!-- breadcrumb end -->
+
+    <!-- Courses detalis section start -->
+    <section class="courses-detalis section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <!-- courses header start -->
+            <div class="courses-header box">
+              <h2 class="text-capitalize">Year 2 Course Details</h2>
+              <div class="rating">
+                <span class="average-rating">(4.0)</span>
+                <span class="average-stars">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </span>
+              </div>
+              <ul>
+                <li>enrolled students - <span>23</span></li>
+                <li>created by - <span><a href="#">CodeMaestro Chris</a></span></li>
+                <li>academic session - <span>2024/25 session</span></li>
+              </ul>
+            </div>
+            <!-- courses header end -->
+
+            <!-- courses tabs start -->
+            <nav class="courses-tabs">
+              <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="course-curriculum-tab" data-bs-toggle="tab"
+                  data-bs-target="#course-curriculum" type="button" role="tab" aria-controls="course-curriculum"
+                  aria-selected="true">Courses</button>
+                <button class="nav-link" id="course-description-tab" data-bs-toggle="tab"
+                  data-bs-target="#course-description" type="button" role="tab" aria-controls="course-description"
+                  aria-selected="false">notes</button>
+                <button class="nav-link" id="course-instructor-tab" data-bs-toggle="tab"
+                  data-bs-target="#course-instructor" type="button" role="tab" aria-controls="course-instructor"
+                  aria-selected="false">schedule</button>
+                <button class="nav-link" id="course-reviews-tab" data-bs-toggle="tab" data-bs-target="#course-reviews"
+                  type="button" role="tab" aria-controls="course-reviews" aria-selected="false">CSC Learn AI</button>
+              </div>
+            </nav>
+            <!-- courses tabs end -->
+
+            <!-- tab panes start -->
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="course-curriculum" role="tabpanel"
+                aria-labelledby="course-curriculum-tab">
+                <div class="course-curriculum box">
+                  <h3 class="text-capitalize mb-4">Courses</h3>
+                  <!-- Accordion start -->
+                  <div class="accordion" id="accordion">
+                    <!-- Accordion item start -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingSE">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseSE" aria-expanded="true" aria-controls="collapseSE">
+                          Introduction to Software Engineering (SEN 201) <span class="ms-auto">6 topics | Pages 1–12</span>
+                        </button>
+                      </h2>
+                      <div id="collapseSE" class="accordion-collapse collapse show" aria-labelledby="headingSE" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <ul class="list-unstyled courselist">
+                            <li>
+                              <i class="fa fa-file-alt me-2"></i>
+                              <a href="notes/BODY SOFTWARE ENGINEERING  CURRENT.pdf#page=1" target="_blank">History of Software Engineering</a>
+                              <span class="float-end">Page 1</span>
+                            </li>
+                            <li>
+                              <i class="fa fa-file-alt me-2"></i>
+                              <a href="notes/BODY SOFTWARE ENGINEERING  CURRENT.pdf#page=2" target="_blank">Principles: Modularity, Abstraction, etc.</a>
+                              <span class="float-end">Page 2</span>
+                            </li>
+                            <li>
+                              <i class="fa fa-file-alt me-2"></i>
+                              <a href="notes/BODY SOFTWARE ENGINEERING  CURRENT.pdf#page=3" target="_blank">Software Quality & Goals</a>
+                              <span class="float-end">Page 3</span>
+                            </li>
+                            <li>
+                              <i class="fa fa-file-alt me-2"></i>
+                              <a href="notes/BODY SOFTWARE ENGINEERING  CURRENT.pdf#page=4" target="_blank">CASE Tools</a>
+                              <span class="float-end">Page 4</span>
+                            </li>
+                            <li>
+                              <i class="fa fa-file-alt me-2"></i>
+                              <a href="notes/BODY SOFTWARE ENGINEERING  CURRENT.pdf#page=5" target="_blank">SDLC & Lifecycle Models</a>
+                              <span class="float-end">Pages 5–9</span>
+                            </li>
+                            <li>
+                              <i class="fa fa-file-alt me-2"></i>
+                              <a href="notes/BODY SOFTWARE ENGINEERING  CURRENT.pdf#page=10" target="_blank">Waterfall, Spiral, XP Models</a>
+                              <span class="float-end">Pages 10–12</span>
+                            </li>
+                          </ul>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!-- Accordion item end -->
+
+                    <!-- Accordion item start -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingSecurity">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseSecurity" aria-expanded="false" aria-controls="collapseSecurity">
+                            Computer security and management (RU-SEN 211) <span class="ms-auto">6 topics | Pages 1–14</span>
+                        </button>
+                      </h2>
+                      <div id="collapseSecurity" class="accordion-collapse collapse" aria-labelledby="headingSecurity" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <ul class="list-unstyled courselist">
+                            <li><i class="fa fa-file-alt me-2"></i> 
+                              <a href="notes/SEN 211_Lecture Note.pdf#page=1" target="_blank">CIA Triad & Security Principles</a>
+                              <span class="float-end">Page 1</span>
+                            </li>
+                            <li><i class="fa fa-file-alt me-2"></i> 
+                              <a href="notes/SEN 211_Lecture Note.pdf#page=2" target="_blank">Security Tools & Controls</a>
+                              <span class="float-end">Pages 2–3</span>
+                            </li>
+                            <li><i class="fa fa-file-alt me-2"></i> 
+                              <a href="notes/SEN 211_Lecture Note.pdf#page=4" target="_blank">Threat & Risk Management</a>
+                              <span class="float-end">Pages 4–5</span>
+                            </li>
+                            <li><i class="fa fa-file-alt me-2"></i> 
+                              <a href="notes/SEN 211_Lecture Note.pdf#page=6" target="_blank">Vulnerability Scanning & Pen Testing</a>
+                              <span class="float-end">Pages 6–7</span>
+                            </li>
+                            <li><i class="fa fa-file-alt me-2"></i> 
+                              <a href="notes/SEN 211_Lecture Note.pdf#page=8" target="_blank">ISO Standards & PDCA Model</a>
+                              <span class="float-end">Pages 8–10</span>
+                            </li>
+                            <li><i class="fa fa-file-alt me-2"></i> 
+                              <a href="notes/SEN 211_Lecture Note.pdf#page=11" target="_blank">Security Policy Frameworks</a>
+                              <span class="float-end">Pages 11–14</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!-- Accordion item end -->
+
+                    <!-- Accordion item start -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingLogic">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseLogic" aria-expanded="false" aria-controls="collapseLogic">
+                          Digital Logic Design (IFT 201) <span class="ms-auto">7 topics | Pages 1–15</span>
+                        </button>
+                      </h2>
+                      <div id="collapseLogic" class="accordion-collapse collapse" aria-labelledby="headingLogic" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <ul class="list-unstyled courselist">
+                            <li><i class="fa fa-file-alt me-2"></i> 
+                              <a href="/notes/logic-and-digital-systems.pdf#page=1" target="_blank">Logic Gates: AND, OR, NOT</a>
+                              <span class="float-end">Page 1</span>
+                            </li>
+                            <li><i class="fa fa-file-alt me-2"></i> 
+                              <a href="/notes/logic-and-digital-systems.pdf#page=2" target="_blank">Boolean Algebra & Truth Tables</a>
+                              <span class="float-end">Page 2</span>
+                            </li>
+                            <li><i class="fa fa-file-alt me-2"></i> 
+                              <a href="/notes/logic-and-digital-systems.pdf#page=3" target="_blank">Combinational vs Sequential Circuits</a>
+                              <span class="float-end">Page 3</span>
+                            </li>
+                            <li><i class="fa fa-file-alt me-2"></i> 
+                              <a href="/notes/logic-and-digital-systems.pdf#page=4" target="_blank">Flip-Flops & Memory Circuits</a>
+                              <span class="float-end">Pages 4–5</span>
+                            </li>
+                            <li><i class="fa fa-file-alt me-2"></i> 
+                              <a href="/notes/logic-and-digital-systems.pdf#page=6" target="_blank">Registers & Counters</a>
+                              <span class="float-end">Pages 6–8</span>
+                            </li>
+                            <li><i class="fa fa-file-alt me-2"></i> 
+                              <a href="/notes/logic-and-digital-systems.pdf#page=9" target="_blank">Timing Diagrams & Clock Signals</a>
+                              <span class="float-end">Pages 9–11</span>
+                            </li>
+                            <li><i class="fa fa-file-alt me-2"></i> 
+                              <a href="/notes/logic-and-digital-systems.pdf#page=12" target="_blank">Synchronous vs Asynchronous Logic</a>
+                              <span class="float-end">Pages 12–15</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!-- Accordion item end -->
+
+                    <!-- Accordion item start -->
+                    <!-- <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          Function <span> 2 lessons | 20 min</span>
+                        </button>
+                      </h2>
+                      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordion">
+                        <div class="accordion-body">
+                          <ul>
+                            <li>
+                              <i class="fa fa-play-circle"></i>
+                              Arrow function
+                              <span>06:00</span>
+                            </li>
+                            <li>
+                              <i class="fa fa-play-circle"></i>
+                              Parameters
+                              <span>06:00</span>
+                            </li>
+                            <li>
+                              <i class="fa fa-play-circle"></i>
+                              Return value
+                              <span>06:00</span>
+                            </li>
+                            <li>
+                              <i class="fa fa-play-circle"></i>
+                              Recursion
+                              <span>06:00</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div> -->
+                    <!-- Accordion item end -->
+                  </div>
+                  <!-- Accordion end -->
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="course-description" role="tabpanel"
+                aria-labelledby="course-description-tab">
+                <div class="course-description box">
+                  <!-- Note 1 -->
+                  <div class="container mt-5">
+                    <!-- Note Section with Preview & Download Button + Modal -->
+                    <div class="mb-4">
+                      <h5>Digital Logic Design (IFT 201) - Note 1</h5>
+                      <button class="btn btn-theme" onclick="previewNote('notes/IFT 211 INTRODUCTION TO LOGIC note 2.pdf')">
+                        Preview & Download <span class="fa fa-download"></span>
+                      </button>
+                    </div>
+
+                    <!-- Preview Modal -->
+                    <div class="modal fade" id="notePreviewModal" tabindex="-1" aria-hidden="true">
+                      <div class="modal-dialog modal-xl modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title">Note Preview</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="height: 600px;">
+                            <iframe id="notePreviewFrame" src="" style="width: 100%; height: 100%;" frameborder="0"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <a id="downloadLink" href="#" download class="btn btn-success">Download</a>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Note 2 -->
+                  <div class="container mt-5">
+                    <!-- Note Section with Preview & Download Button + Modal -->
+                    <div class="mb-4">
+                      <h5>Digital Logic Design (IFT 201) - Note 2</h5>
+                      <button class="btn btn-theme" onclick="previewNote('notes/IFT 211LECTURE NOTES.pdf')">
+                        Preview & Download <span class="fa fa-download"></span>
+                      </button>
+                    </div>
+
+                    <!-- Preview Modal -->
+                    <div class="modal fade" id="notePreviewModal" tabindex="-1" aria-hidden="true">
+                      <div class="modal-dialog modal-xl modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title">Note Preview</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="height: 600px;">
+                            <iframe id="notePreviewFrame" src="" style="width: 100%; height: 100%;" frameborder="0"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <a id="downloadLink" href="#" download class="btn btn-success">Download</a>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="container mt-5">
+                    <!-- Note Section with Preview & Download Button + Modal -->
+                    <div class="mb-4">
+                      <h5>Introduction to Software Engineering (SEN 201)</h5>
+                      <button class="btn btn-theme" onclick="previewNote('notes/BODY SOFTWARE ENGINEERING  CURRENT.pdf')">
+                        Preview & Download  <i class="fa fa-download"></i>
+                      </button>
+                    </div>
+
+                    <!-- Preview Modal -->
+                    <div class="modal fade" id="notePreviewModal" tabindex="-1" aria-hidden="true">
+                      <div class="modal-dialog modal-xl modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title">Note Preview</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="height: 600px;">
+                            <iframe id="notePreviewFrame" src="" style="width: 100%; height: 100%;" frameborder="0"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <a id="downloadLink" href="#" download class="btn btn-success">Download</a>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="container mt-5">
+                    <!-- Note Section with Preview & Download Button + Modal -->
+                    <div class="mb-4">
+                      <h5>Computer security, maintenance and management</h5>
+                      <button class="btn btn-theme" onclick="previewNote('notes/SEN 211_Lecture Note.pdf')">
+                        Preview & Download  <i class="fa fa-download"></i>
+                      </button>
+                    </div>
+
+                    <!-- Preview Modal -->
+                    <div class="modal fade" id="notePreviewModal" tabindex="-1" aria-hidden="true">
+                      <div class="modal-dialog modal-xl modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title">Note Preview</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="height: 600px;">
+                            <iframe id="notePreviewFrame" src="" style="width: 100%; height: 100%;" frameborder="0"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <a id="downloadLink" href="#" download class="btn btn-success">Download</a>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="course-instructor" role="tabpanel" aria-labelledby="course-instructor-tab">
+                <div class="course-instructor box">
+                  <h3 class="mb-3 text-capitalize">instructor</h3>
+                  <div class="instructor-details">
+                    <div class="details-warp d-flex align-items-center flex-wrap">
+                      <div class="left-box me-4">
+                        <div class="img-box">
+                          <img src="assets/img/instructor/1.png" class="rounded-circle" alt="">
+                        </div>
+                      </div>
+                      <div class="right-box">
+                        <h4>john doe <span>(web developer)</span></h4>
+                        <ul>
+                          <li><i class="fa fa-star"></i> 4.5 Rating</li>
+                          <li><i class="fa fa-play-circle"></i> 10 Courses</li>
+                          <li><i class="fa fa-certificate"></i> 3000 Reviews</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="text">
+                      <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, dolor iste
+                        perspiciatis aut
+                        ullam eius est quisquam doloribus soluta nihil aperiam, nisi quia autem repellat dignissimos
+                        nulla impedit at voluptatum. Deleniti delectus necessitatibus inventore quibusdam repellat
+                        tenetur ex nobis ut placeat dignissimos? Aspernatur natus alias tempore soluta blanditiis
+                        quisquam velit?</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="course-reviews" role="tabpanel" aria-labelledby="course-reviews-tab">
+                <div class="chatbot box">
+                    <h3 class="mb-4 text-capitalize">AI Study Assistant</h3>
+                    <div id="chat-container">
+                      <iframe
+                      src="https://www.chatbase.co/chatbot-iframe/OKsBhscTvljLDXLVcbV_P"
+                      width="100%"
+                      style="height: 100%; color: brown;"
+                      frameborder="0"
+                    ></iframe>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- tab panes end -->
+          </div>
+          <div class="col-lg-4">
+            <!-- courses sidebar start -->
+            <div class="courses-sidebar box">
+              <div class="img-box position-relative" data-bs-toggle="modal" data-bs-target="#video-modal">
+                <img src="/img/217814106_109301778095870_7635780791052463190_n.jpg" alt="" class="w-100">
+                <div class="play-icon">
+                  <i class="fa fa-play"></i>
+                </div>
+              </div>
+              <div class="exam-countdown mb-5">
+                <h3>Second Semester Exam Countdown:</h3>
+                <h2 id="examTimer" class="fw-bold"></h2>
+              </div>
+              
+              <div class="search-section mb-4">
+                <h3 class="mb-3">Search Course Topics</h3>
+                <input type="text" id="searchInput" class="form-control mb-3" placeholder="Search by topic or keyword...">
+                <ul id="searchResults" class="list-group mb-3">
+                  <!-- Matching results will appear here -->
+                </ul>
+              </div>
+
+              <div class="btn-warp">
+                <button type="button" class="btn btn-theme btn-block">Start Learning <i class="fa fa-pen-fancy"></i></button>
+              </div>
+            </div>
+            <!-- courses sidebar end -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Courses detalis section end -->
+
+    <!-- footer start -->  
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-lg-3">
+              <div class="footer-item">
+                <h3 class="footer-logo"><span>csc</span> learn</h3>
+                <ul>
+                  <li><a href="#">about</a></li>
+                  <li><a href="#">why choose us</a></li>
+                  <li><a href="#">course payment</a></li>
+                  <li><a href="#">contact</a></li>
+                  <li><a href="#">testimonials</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div class="footer-item">
+                <h3>learning</h3>
+                <ul>
+                  <li><a href="#">courses</a></li>
+                  <li><a href="#">pricing</a></li>
+                  <li><a href="#">get the app</a></li>
+                  <li><a href="#">faq</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div class="footer-item">
+                <h3>more</h3>
+                <ul>
+                  <li><a href="#">library</a></li>
+                  <li><a href="#">become a course creater</a></li>
+                  <li><a href="#">training webinars</a></li>
+                  <li><a href="#">free personality test</a></li>
+                  <li><a href="#">help and support</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div class="footer-item">
+                <h3>get in touch</h3>
+                <ul>
+                  <li><a href="#"><i class="fa fa-facebook social-icon"></i> facebook</a></li>
+                  <li><a href="#"><i class="fa fa-whatsapp social-icon"></i> whatsapp</a></li>
+                  <li><a href="#"><i class="fa fa-instagram social-icon"></i> instagram</a></li>
+                  <li><a href="#"><i class="fa fa-youtube social-icon"></i> youtube</a></li>
+                  <li><a href="#"><i class="fa fa-linkedin social-icon"></i> linkedin</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="m-0 py-4 text-center">copyright © 2025 <span>CodeMaestro Chris</span></p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+  </div>
+  <!-- main wrapper end -->
+
+  <div class="style-switcher js-style-switcher">
+    <div class="style-switcher-toggler js-style-switcher-toggler">
+      <i class="fa fa-cog"></i>
+    </div>
+    <h3>style switcher</h3>
+    <div class="style-switcher-item">
+      <!-- theme colors -->
+      <div class="theme-colors js-theme-colors">
+        <button type="button" data-js-theme-color="color-1" class="color-1"></button>
+        <!-- <button type="button" data-js-theme-color="color-2" class="js-theme-color-item color-2"></button>
+        <button type="button" data-js-theme-color="color-3" class="js-theme-color-item color-3"></button>
+        <button type="button" data-js-theme-color="color-4" class="js-theme-color-item color-4"></button>
+        <button type="button" data-js-theme-color="color-5" class="js-theme-color-item color-5"></button> -->
+      </div>
+    </div>
+    <div class="style-switcher-item">
+      <div class="form-check form-switch">
+        <input class="form-check-input js-dark-mode" type="checkbox" role="switch" id="dark-mode">
+        <label class="form-check-label" for="dark-mode">Dark Mode</label>
+      </div>
+    </div>
+    <div class="style-switcher-item">
+      <div class="form-check form-switch">
+        <input class="form-check-input js-glass-effect" type="checkbox" role="switch" id="glass-effect">
+        <label class="form-check-label" for="glass-effect">Glass Effect</label>
+      </div>
+    </div>
+  </div>
+  <!-- style switcher end -->
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
