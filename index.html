@@ -142,7 +142,7 @@
     </section><br>
     <!-- fun facts section end -->
 
-    <div class="about my-5">  
+    <div class="about my-5" id="about">  
       <div class="container">
           <div class="col-md-12">
             <div class="section-title text-center">
@@ -167,7 +167,7 @@
     </div><br>
 
     <!-- Why choose us section -->
-    <div class="choose-us my-5 py-5">
+    <div class="choose-us my-5 py-5" id="wcu">
       <div class="container">
         <div class="section-title text-center mt-2 mb-5">
           <h2 class="title" data-aos="fade-up">Why Choose Us</h2>
@@ -309,7 +309,7 @@
     <!-- courses section end -->
 
     <!-- Testimonials section start -->
-    <section class="testimonials-section section-padding position-relative">
+    <section class="testimonials-section section-padding position-relative" id="testimonials">
       <div class="decoration-circles d-none d-lg-block">
         <div class="decoration-circles-item"></div>
         <div class="decoration-circles-item"></div>
@@ -317,9 +317,9 @@
         <div class="decoration-circles-item"></div>
       </div>
       <div class="decoration-imgs d-none d-lg-block">
-        <img src="./1(1).png" alt="" class="decoration-imgs-item">
-        <img src="./2.png" alt="" class="decoration-imgs-item">
-        <img src="./3.png" alt="" class="decoration-imgs-item">
+        <img src="./img/1i.JPG" alt="" class="decoration-imgs-item">
+        <img src="./img/1(1).JPG" alt="" class="decoration-imgs-item">
+        <img src="./img/2i.JPG" alt="" class="decoration-imgs-item">
       </div>
       <div class="container">
         <div class="row justify-content-center">
@@ -333,28 +333,35 @@
         <div class="row justify-content-center">
           <div class="col-md-8 col-lg-6">
             <div class="img-box rounded-circle position-relative">
-              <img src="./img/1.png" alt="" class="w-100 rounded-circle js-testimonials-img">
+              <img src="./img/3i.JPG" alt="" class="w-100 rounded-circle js-testimonials-img">
             </div>
             <div id="carouselOne" class="carousel slide text-center pointer-event" data-bs-ride="carousel">
               <div class="carousel-inner mb-4">
-                <div class="carousel-item" data-js-testimonials-img="./img/1.png">
+                <div class="carousel-item" data-js-testimonials-img="img/1i.JPG">
                   <div class="testimonials-item">
                     <p class="text-1">"If CSC LEARN existed during my time, life would’ve been easier! I’m proud of this platform — it’s a game-changer for Rhema University CSC students."</p>
                     <h3>Christian Meshack</h3>
                     <p class="text-2">Alumni</p>
                   </div>
                 </div>
-                <div class="carousel-item" data-js-testimonials-img="./img/1.png">
+                <div class="carousel-item" data-js-testimonials-img="img/1(1).JPG">
                   <div class="testimonials-item">
-                    <p class="text-1">"I love how organized everything is on CSC LEARN. It’s easy to navigate and has helped me stay ahead in all my programming courses."</p>
-                    <h3>Obinna Kelly</h3>
+                    <p class="text-1">"This is really learning made easy. With CSC LEARN I can study better, anywhere and at any time. It is beginning of amazing era in the computer science department"</p>
+                    <h3>Ifeanyi Wisdom</h3>
                     <p class="text-2">Student</p>
                   </div>
                 </div>
-                <div class="carousel-item active" data-js-testimonials-img="./img/1.png">
+                <div class="carousel-item" data-js-testimonials-img="img/2i.JPG">
+                  <div class="testimonials-item">
+                    <p class="text-1">"I love how organized everything is on CSC LEARN. It’s easy to navigate and has helped me stay ahead in all my programming courses."</p>
+                    <h3>Emmanuel Blessing</h3>
+                    <p class="text-2">Student</p>
+                  </div>
+                </div>
+                <div class="carousel-item active" data-js-testimonials-img="img/3i.JPG">
                   <div class="testimonials-item">
                     <p class="text-1">"CSC LEARN has completely changed how I study. I now understand difficult topics faster, and having all our course materials in one place is just perfect!"</p>
-                    <h3>Akujobi Prince</h3>
+                    <h3>Chukwu Davies</h3>
                     <p class="text-2">Student</p>
                   </div>
                 </div>
@@ -497,11 +504,11 @@
               <div class="footer-item">
                 <h3 class="footer-logo"><span>csc</span> learn</h3>
                 <ul>
-                  <li><a href="#">about</a></li>
-                  <li><a href="#">why choose us</a></li>
-                  <li><a href="#">course payment</a></li>
-                  <li><a href="#">contact</a></li>
-                  <li><a href="#">testimonials</a></li>
+                  <li><a href="#about">about</a></li>
+                  <li><a href="#wcu">why choose us</a></li>
+                  <li><a href="./course-payment.html">course payment</a></li>
+                  <li><a href="./contact.html">contact</a></li>
+                  <li><a href="#testimonials">testimonials</a></li>
                 </ul>
               </div>
             </div>
@@ -509,10 +516,10 @@
               <div class="footer-item">
                 <h3>learning</h3>
                 <ul>
-                  <li><a href="#">courses</a></li>
-                  <li><a href="#">pricing</a></li>
-                  <li><a href="#">get the app</a></li>
-                  <li><a href="#">faq</a></li>
+                  <li><a href="./Courses.html">courses</a></li>
+                  <li><a href="./Courses.html">pricing</a></li>
+                  <li><a href="./course-payment.html">buy course</a></li>
+                  <li><a href="./index.html">learn more</a></li>
                 </ul>
               </div>
             </div>
@@ -520,11 +527,10 @@
               <div class="footer-item">
                 <h3>more</h3>
                 <ul>
-                  <li><a href="#">library</a></li>
-                  <li><a href="#">become a course creater</a></li>
-                  <li><a href="#">training webinars</a></li>
-                  <li><a href="#">free personality test</a></li>
-                  <li><a href="#">help and support</a></li>
+                  <li><a href="./Courses.html">library</a></li>
+                  <li><a href="./Courses.html">training webinars</a></li>
+                  <li><a href="./sign up.html">free personality test</a></li>
+                  <li><a href="./contact.html">help and support</a></li>
                 </ul>
               </div>
             </div>
@@ -532,11 +538,11 @@
               <div class="footer-item">
                 <h3>get in touch</h3>
                 <ul>
-                  <li><a href="#"><i class="fa fa-facebook social-icon"></i> facebook</a></li>
-                  <li><a href="#"><i class="fa fa-whatsapp social-icon"></i> whatsapp</a></li>
-                  <li><a href="#"><i class="fa fa-instagram social-icon"></i> instagram</a></li>
-                  <li><a href="#"><i class="fa fa-youtube social-icon"></i> youtube</a></li>
-                  <li><a href="#"><i class="fa fa-linkedin social-icon"></i> linkedin</a></li>
+                  <li><a href="https://www.facebook.com"><i class="fa fa-facebook social-icon"></i> facebook</a></li>
+                  <li><a href="https://www.web.whatsapp.com"><i class="fa fa-whatsapp social-icon"></i> whatsapp</a></li>
+                  <li><a href="https://www.instagram.com"><i class="fa fa-instagram social-icon"></i> instagram</a></li>
+                  <li><a href="https://www.youtube.com"><i class="fa fa-youtube social-icon"></i> youtube</a></li>
+                  <li><a href="https://www.linkedin.com"><i class="fa fa-linkedin social-icon"></i> linkedin</a></li>
                 </ul>
               </div>
             </div>
@@ -545,8 +551,8 @@
       </div>
       <div class="footer-bottom">
         <div class="container">
-          <p class="m-0 py-4 text-center">copyright © 2025 <span>CodeMaestro Chris</span></p>
-          <a href="#" class="btn fa fa-arrow-up to-top"></a>
+          <p class="m-0 py-4 text-center">copyright © 2025 <span>Paul Joseph</span></p>
+          <!-- CodeMaestro Chris -->
         </div>
       </div>
     </footer>
